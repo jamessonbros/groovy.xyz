@@ -1,0 +1,13 @@
+{
+  "title": "groovy.xyz",
+  "menu": [
+    {
+      "text": "home",
+      "uri": "/"
+    },
+    {
+      "text": "about",
+      "uri": "/about/"
+    }
+  ]
+}

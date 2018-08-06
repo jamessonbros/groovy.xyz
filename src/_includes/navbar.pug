@@ -1,0 +1,16 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href="/") #{ site.title }
+  button.navbar-toggler(
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+  )
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbarSupportedContent
+    ul.navbar-nav.mr-auto
+      for item in site.menu
+        - console.log(page.url)
+        - var linkClass = page.url === item.uri ? 'active' : ''
+        li.nav-item(class=`${linkClass}`)
+          a.nav-link(href=`${item.uri}`) #{ item.text }
