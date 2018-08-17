@@ -1,0 +1,55 @@
+---
+title: "Vehicle Wrap Design"
+subtitle: "Elite, Confidence-Inspiring business cards that mean business."
+auto_graphics_items:
+  - Business owners
+  - Disk jockeys & radio Stations
+  - Limo & Taxi rentals
+  - Fleet Vehicles
+  - Real estate professionals
+  - Adventure sports
+  - School programs
+  - Race haulers
+  - Race cars
+  - Construction equipment
+  - Rentals & leasing
+  - And much more!
+---
+section
+  .jumbotron.jumbotron-fluid.text-center.mb-0
+    .container.py-5
+      h1= title
+      p.lead= subtitle
+
+section
+  .bg-light.py-4.border-bottom.border-top
+    .container
+      code #subnav
+
+section.my-5
+  .container
+    .text-center
+      h2 Professionally-designed Vehicle Wraps
+      p Custom design for cars, vans, SUVs, commercial trucks
+
+section.my-5
+  .container
+    .text-center
+      p Residential * Commercial * Industrial
+      code #car
+      p Auto Graphics are Perfect for
+      div
+        each item in auto_graphics_items
+          span.mx-2= item
+
+section.my-5
+  .container
+    h2.text-center Vehicle Wrap Design Examples
+    code #images
+
+section.my-5
+  .container
+    .text-center
+      h2 Design Packages
+      h3 Choose your Vehicle Wrap Design Destiny
+    code #some-grid
