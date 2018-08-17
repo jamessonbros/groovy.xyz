@@ -1,11 +1,11 @@
 extends /layouts/base.pug
 
 block body
-  include /navbar
+  //- include /navbar
   block hero
     if hero
       section.hero(id=`hero--${page.fileSlug}`)
         include /hero
   main
     | !{ content }
-  include /footer
+  //- include /footer
