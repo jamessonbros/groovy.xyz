@@ -1,4 +1,4 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
   a.navbar-brand(href="/")
     code #svg-jaws
   button.navbar-toggler(
@@ -11,7 +11,20 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
   .collapse.navbar-collapse#navbarSupportedContent
     ul.navbar-nav.mr-auto
       for item in site.menu
-        - console.log(page.url)
-        - var linkClass = page.url === item.uri ? 'active' : ''
-        li.nav-item(class=`${linkClass}`)
-          a.nav-link(href=`${item.uri}`) #{ item.text }
+        - let children = collections[item.children]
+        if children && children.length
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(
+              href=item.uri
+              id=`dropdown-${item.children}`
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            ) #{ item.text }
+            .dropdown-menu(aria-labelledby=`dropdown-${item.children}`)
+              each subitem in collections[item.children]
+                a.dropdown-item(href=subitem.url)= subitem.data.title
+        else
+          li.nav-item
+            a.nav-link(href=`${item.uri}`) #{ item.text }

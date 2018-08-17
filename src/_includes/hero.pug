@@ -1,5 +1,7 @@
+include /_mixins
+
 .jumbotron.jumbotron-fluid
-  .container
+  +container.text-center
     if hero.title
       h1.display-4= hero.title
     if hero.lead

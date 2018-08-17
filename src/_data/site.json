@@ -2,12 +2,19 @@
   "title": "groovy.xyz",
   "menu": [
     {
-      "text": "home",
-      "uri": "/"
+      "text": "Branding",
+      "uri": "/branding/",
+      "children": "offerings_branding"
     },
     {
-      "text": "about",
-      "uri": "/about/"
+      "text": "Marketing",
+      "uri": "/marketing/",
+      "children": "offerings_marketing"
+    },
+    {
+      "text": "Web & Social",
+      "uri": "/web/",
+      "children": "offerings_web"
     }
   ]
 }

@@ -1,0 +1,4 @@
+mixin container(fluid=false)
+  - let className = fluid ? 'container-fluid' : 'container'
+  div(class=className)&attributes(attributes)
+    block

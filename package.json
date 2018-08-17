@@ -7,6 +7,7 @@
         "dev": "DEBUG=Eleventy* eleventy --serve"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^0.5.0"
+        "@11ty/eleventy": "^0.5.0",
+        "lodash": "^4.17.10"
     }
 }
