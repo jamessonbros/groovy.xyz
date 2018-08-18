@@ -1,4 +1,4 @@
 {
-    "/_site/assets/dist.js": "/_site/assets/dist.js",
-    "/_site/assets/dist.css": "/_site/assets/dist.css"
+    "/src/assets/dist/build.js": "/src/assets/dist/build.js",
+    "/src/assets/dist/build.css": "/src/assets/dist/build.css"
 }

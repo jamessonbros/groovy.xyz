@@ -4,13 +4,14 @@
     "private": true,
     "scripts": {
       "build": "yarn assets:production && html:build",
-      "dev": "yarn assets:watch & yarn html:dev",
+      "dev": "yarn html:dev && yarn assets:watch",
       "html:build": "eleventy",
       "html:dev": "DEBUG=Eleventy* eleventy --serve",
       "assets:dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
       "assets:watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
       "assets:hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-      "assets:production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+      "assets:production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "clean": "rm -rf ./_site/*"
     },
     "devDependencies": {
         "@11ty/eleventy": "^0.5.2",

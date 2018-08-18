@@ -1,1 +1,36 @@
+// See ./node_modules/bootstrap/scss/_variables.scss for originals
+
+/**
+ * -----------------------------------------
+ * Colors
+ * -----------------------------------------
+ */
+
+// Custom colors
 $pink: #e91366;
+
+// Example: Override BS4 default colors
+$secondary: $pink;
+// https://htmlcolorcodes.com/color-names/
+$success: springgreen;
+
+/**
+ * -----------------------------------------
+ * Fonts
+ * -----------------------------------------
+ */
+
+// Font Families
+$font-thick: 'Oswald', sans-serif;
+$font-main: 'Noto Sans', sans-serif;
+$font-family-sans-serif: $font-main;
+
+// Headings
+$headings-font-family: $font-thick;
+$headings-font-weight: 700;
+
+// Display Headings
+$display1-weight: 700;
+$display2-weight: 700;
+$display3-weight: 700;
+$display4-weight: 700;
