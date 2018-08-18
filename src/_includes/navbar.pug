@@ -24,7 +24,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
             ) #{ item.text }
             .dropdown-menu(aria-labelledby=`dropdown-${item.children}`)
               each subitem in collections[item.children]
-                a.dropdown-item(href=subitem.uri)= subitem.data.title
+                a.dropdown-item(href=subitem.url)= subitem.data.title
               .dropdown-divider
               a.dropdown-item(href=item.uri) View All
         else
