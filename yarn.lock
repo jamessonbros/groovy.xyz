@@ -973,6 +973,10 @@ big.js@^3.1.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
 
+bigtext@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bigtext/-/bigtext-1.0.1.tgz#6434884cef795184f6a68d259d074156e3bd16c1"
+
 bin-build@^2.0.0, bin-build@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/bin-build/-/bin-build-2.2.0.tgz#11f8dd61f70ffcfa2bdcaa5b46f5e8fedd4221cc"

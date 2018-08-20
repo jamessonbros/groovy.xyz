@@ -3,18 +3,19 @@
     "description": "static site generated with 11ty",
     "private": true,
     "scripts": {
-      "build": "yarn assets:production && html:build",
-      "dev": "yarn html:dev && yarn assets:watch",
-      "html:build": "eleventy",
-      "html:dev": "DEBUG=Eleventy* eleventy --serve",
-      "assets:dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-      "assets:watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-      "assets:hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-      "assets:production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-      "clean": "rm -rf ./_site/*"
+        "build": "yarn assets:production && html:build",
+        "dev": "yarn assets:watch & yarn html:dev",
+        "html:build": "eleventy",
+        "html:dev": "DEBUG=Eleventy* eleventy --serve",
+        "assets:dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "assets:watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "assets:hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "assets:production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "clean": "rm -rf ./_site/*"
     },
     "devDependencies": {
         "@11ty/eleventy": "^0.5.2",
+        "bigtext": "^1.0.1",
         "bootstrap": "^4.1.3",
         "jquery": "^3.3.1",
         "laravel-mix": "^2.1.11",

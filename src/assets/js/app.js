@@ -1,7 +1,13 @@
 import popper from 'popper.js'
-import $ from 'jquery'
+import jQuery from 'jquery'
 
 window.Popper = popper.default
-window.$ = window.jQuery = $
+window.$ = window.jQuery = jQuery
 
 import 'bootstrap'
+
+require('bigtext/src/bigtext.js')
+
+$(document).ready(function () {
+  $('.bigtext').bigtext()
+})
