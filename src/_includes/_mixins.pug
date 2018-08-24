@@ -2,3 +2,10 @@ mixin container(fluid=false)
   - let className = fluid ? 'container-fluid' : 'container'
   div(class=className)&attributes(attributes)
     block
+
+mixin list_offerings(type)
+  - let items = collections[`offerings_${type}`]
+  ul
+    each item in items
+      li
+        a(href=item.url)= item.data.title
