@@ -1,61 +1,81 @@
 ---
 title: Branding
 layout: /layouts/default.pug
-hero:
-  title: Branding
-  lead: The lead for branding landing
 ---
 include /_mixins
 
 section
   .container
-    // see /_includes/_mixins for `list_offerings`
-    +list_offerings('branding')
+    h1.bigtext.display-4
+      div Branding
+      div Art roids for your business
 
 section.my-5
-  .container
-    hr
+  .container.border-top.py-3
+    h2.text-uppercase Branding essentials 
+      small.text-muted No these, No brand
+    .row.py-3
+      .col-md-6.col-lg-4.border.py-2
+        h3 Brand identity
+        p If you have no brand or your brand sucks, I probably don't need to tell you how critical your brand's identity is. But I will anyways because thats my job. Behold the secrets of (re)establishing your brand as a loving customer's bodypart.
+        a.btn.btn-outline-primary(href='#') More info »
+      .col-md-6.col-lg-4.border.py-2
+        h3 Logo
+        p The bleeding heart of every business's brand, almost literally. Without a logo, it can be pretty tough to communicate who you are or what you offer. Don't worry, groovy's got your back. Here's the gospel on your logo.
+        a.btn.btn-outline-primary(href='#') More info »
+      .col-md-6.col-lg-4.border.py-2
+        h3 Business card
+        p You've heard them old first impressions sayings, well thems all true. Don't blow it with a crap business card. You don't have to (unless you want to...) have the greatest most amazingist business card on earth, but it should favor the person not laughing at you and throwing it away immediately. Here's what you need to know.
+        a.btn.btn-outline-primary(href='#') More info »
+
+section.my-5
+  .container.border-top.py-3
+    h2.text-uppercase Brand collatteral 
+      small.text-muted components of your branding
+    .row.py-3
+      .col-md-6.col-lg-4.border.py-2
+        h3 Vehicle wrap
+        p Killer vehicle wraps, the rockstar of your brands visual identity. Great vehicle wraps command respect, attention, and tell prospects immediately that you are <em>in business</em>. Nothing gets me jazzed more than seeing a well-designed wrap. Imagine how I'd feel about yours. What you driving anyways?
+        a.btn.btn-outline-primary(href='#') More info »
+      .col-md-6.col-lg-4.border.py-2
+        h3 Hang tag
+        p Great products are nothing without the branding fruit hanging from it.
+        a.btn.btn-outline-primary(href='#') More info »
+      .col-md-6.col-lg-4.border.py-2
+        h3 Name badge
+        p Awesome envelopes are a joy to open.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+      .col-md-6.col-lg-4.border.py-2
+        h3 Vector signature
+        p Professional presentation folders make impressions.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+
+section.my-5
+  .container.border-top.pt-3
+    h2.text-uppercase Stationery branding 
+      small.text-muted worthy of your business
     .row.my-4
-      .col-md-4
-        h2 Brand identity
-        code #image
-      .col-md-4
-        h2 Logo
-        code #image
-      .col-md-4
-        h2 Business card
-        code #image
+      .col-md-6.col-lg-4.border.py-2
+        h3 Letterhead
+        p Sleek letterheads speak volumes.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+      .col-md-6.col-lg-4.border.py-2
+        h3 Envelope
+        p Awesome envelopes are a joy to open.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+      .col-md-6.col-lg-4.border.py-2
+        h3 Folder
+        p Professional presentation folders make impressions.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+      .col-md-6.col-lg-4.border.py-2
+        h3 Bookmark
+        p Sleek letterheads speak volumes.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+      .col-md-6.col-lg-4.border.py-2
+        h3 Label
+        p Sleek letterheads speak volumes.
+        p <button type="button" class="btn btn-outline-primary">More info »</button>
+
+
     hr
-    .row.my-4
-      .col-md-4
-        h2 Postcard
-        code #image
-      .col-md-4
-        h2 Rack card
-        code #image
-      .col-md-4
-        h2 Vehicle wrap
-        code #image
-    hr
-    .row.my-4
-      .col-md-4
-        h2 Letterhead
-        code #image
-      .col-md-4
-        h2 Envelope
-        code #image
-      .col-md-4
-        h2 Folder
-        code #image
-    hr
-    .row.my-4
-      .col-md-4
-        h2 Sign
-        code #image
-      .col-md-4
-        h2 Digitized Signature
-        code #image
-      .col-md-4
-        h2 Hang tag
-        code #image
-    hr
+
