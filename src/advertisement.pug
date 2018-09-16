@@ -4,21 +4,22 @@ layout: /layouts/default.pug
 tags:
   - marketing
 ---
-<div class="container my-5">
-    <h1 class="bigtext display-4">
-      <div>Advertisement</div>
-    </h1>
-</div>
 section.my-5
   .container
-    .row.my-4
-      .col-md-4.order-12
-        code #image
-      .col-md-8.order-1
-        p.lead sdfg.
-hr
+    h1.bigtext.display-4
+      div Advertisement
+    p
+      img.img-fluid(src="/assets/img/shark-teeth-horizontal-rule.png" alt="Shark teeth horizontal rule")
+    h1.bigtext.display-4.alert.alert-dark.text-light
+      div Coming soon
 
 section.my-5
   .container
-    h2.display-4 h2
-    p asdf.
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='/') Homepage
+        li.breadcrumb-item
+          a(href='/marketing/') Marketing
+        li.breadcrumb-item.active(aria-current='page') Advertisement
+

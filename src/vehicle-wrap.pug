@@ -2,9 +2,7 @@
 title: Vehicle wrap
 tags:
   - branding
-hero:
-  title: Vehicle wraps
-  lead: Elite, Confidence-Inspiring business cards that mean business.
+
 auto_graphics_items:
   - Business owners
   - Disk jockeys & radio Stations
@@ -19,16 +17,25 @@ auto_graphics_items:
   - Rentals & leasing
   - And much more!
 ---
-section
-  .bg-light.py-4.border-bottom.border-top
-    .container
-      code #subnav
+section.my-5
+  .container
+    h1.bigtext.display-4
+      div Vehicle wrap
+    p
+      img.img-fluid(src="/assets/img/shark-teeth-horizontal-rule.png" alt="Shark teeth horizontal rule")
+    h1.bigtext.display-4.alert.alert-dark.text-light
+      div coming soon
 
 section.my-5
   .container
-    .text-center
-      h2 Professionally-designed Vehicle Wraps
-      p Custom design for cars, vans, SUVs, commercial trucks
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='/') Homepage
+        li.breadcrumb-item
+          a(href='/branding/') Branding
+        li.breadcrumb-item.active(aria-current='page') Vehicle wrap
+
 
 section.my-5
   .container
@@ -39,15 +46,3 @@ section.my-5
       div
         each item in auto_graphics_items
           span.mx-2= item
-
-section.my-5
-  .container
-    h2.text-center Vehicle Wrap Design Examples
-    code #images
-
-section.my-5
-  .container
-    .text-center
-      h2 Design Packages
-      h3 Choose your Vehicle Wrap Design Destiny
-    code #some-grid

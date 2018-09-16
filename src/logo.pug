@@ -3,10 +3,45 @@ title: Logo
 layout: /layouts/default.pug
 tags:
   - branding
-hero:
-  title: How to make your logo great
-  lead: See page's frontmatter `hero` section of data
+
 ---
+section.my-5
+  .container
+    .row.justify-content-md-center
+      .col-md-10.col-lg-8
+        h1.bigtext.display-4
+          div Logo
+    p
+      img.img-fluid(src="/assets/img/shark-teeth-horizontal-rule.png" alt="Shark teeth horizontal rule")
+    h1.bigtext.display-4.alert.alert-dark.text-light
+      div Coming soon
+
+section.my-5
+  .container
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='/') Homepage
+        li.breadcrumb-item
+          a(href='/branding/') Branding
+        li.breadcrumb-item.active(aria-current='page') Logo
+    hr.my-5
+    h4 Subsections
+      li Logo
+      li Logo examples
+      li Price & order
+      li Tips for a great logo
+    hr.my-5
+    h2 Logo
+    hr.my-5
+    h2 Logo examples
+    hr.my-5
+    h2 Pricing & order info
+    hr.my-5
+    h2 Logo tips
+
+
+
 section.my-5
   .container
     .row.my-4
